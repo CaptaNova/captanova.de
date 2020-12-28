@@ -1,0 +1,117 @@
+@import "reset";
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+html {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: "Oswald", sans-serif;
+}
+
+footer {
+  background-color: var(--color-primary);
+  box-sizing: border-box;
+  font-size: 90%;
+  line-height: 1.5;
+  margin-top: var(--margin);
+  padding: calc(2 * var(--grid-size)) var(--grid-size);
+
+  a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+main {
+  /* reset */
+  border: 0;
+  display: block;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  /* style */
+  box-sizing: border-box;
+  line-height: 1.5;
+  margin-top: var(--margin);
+  padding: var(--grid-size);
+}
+
+#footer-content {
+  align-content: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .footer-group {
+    margin: var(--grid-size);
+    width: 50%;
+  }
+
+  .footer-group:first-child {
+    text-align: right;
+  }
+}
+
+.feather {
+  fill: none;
+  height: 24px;
+  stroke: var(--color-primary);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  width: 24px;
+}
+
+.max-width {
+  margin: 0 auto;
+  max-width: 1012px;
+}
+
+.panel {
+  box-sizing: border-box;
+  flex: 1 1 0px;
+  margin: calc(2 * var(--grid-size)) auto 0 auto;
+  min-width: 25rem;
+  padding: 0 var(--grid-size);
+}
+
+.panel-container {
+  align-items: stretch;
+  align-content: stretch;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.panel-content {
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  box-sizing: border-box;
+  color: var(--color-text);
+  display: block;
+  height: 100%;
+  padding: var(--grid-size);
+
+  h2 {
+    font-size: 150%;
+    font-weight: bold;
+    margin-bottom: var(--grid-size);
+  }
+
+  h3 {
+    font-size: 120%;
+    font-weight: normal;
+    margin-bottom: var(--grid-size);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .panel-content {
+    padding: calc(2 * var(--grid-size));
+  }
+}

@@ -1,0 +1,12 @@
+:root {
+  --color-background: whitesmoke;
+  --color-text: #333;
+  --color-primary: #daa520;
+  --grid-size: 16px;
+  --half-grid-size: calc(0.5 * var(--grid-size));
+  --margin: calc(3 * var(--grid-size));
+
+  @media screen and (min-width: 600px) {
+    --margin: calc(5 * var(--grid-size));
+  }
+}

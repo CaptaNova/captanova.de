@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body class="{{ page.content-type }}">
+    <header>
+      <img src="assets/images/logo.png" alt="CaptaNova logo">
+      <h2>Einfach<span class="dot">.</span> Anders<span class="dot rotate">.</span></h2>
+    </header>
+    <main role=”main” class="max-width">
+      <div id="agile" class="panel">
+        <a href="https://agile.nebula.de">
+          <img src="assets/images/undraw_content_team_3epn.svg">
+          <h2 style="margin-top: 2rem;">Agiler Werkzeugkasten</h2>
+          <p>Wir haben uns den agilen Werten und Prinzipien verschrieben und versuchen diese wo immer möglich einzusetzen.
+            Lass dir von unseren agilen Werkzeugen dabei helfen.</p>
+        </a>
+      </div>
+      <div id="music" class="panel">
+        <a href="{{ "/musik/" | relative_url }}">
+          <img src="assets/images/undraw_compose_music_ovo2.svg">
+          <h2 style="margin-top: 2rem;">Musik</h2>
+          <p>Sakrale Musik muss nicht langweilig sein.
+            Unsere Orchestrierungen und Arrangements sind stark von orchestraler Filmmusik beeinflusst und machen geistliches Liedgut auch jüngerem Publikum zugänglich.</p>
+        </a>
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

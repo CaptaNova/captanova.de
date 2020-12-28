@@ -1,0 +1,8 @@
+{
+    "image": "jekyll/jekyll",
+    // Use 'forwardPorts' to specify a list of ports that should be forwarded from inside the
+    // container to the local machine.
+    "forwardPorts": [4000],
+    // Add the IDs of extensions you want installed when the container is created in the array below.
+    // "extensions": [ "rebornix.Ruby" ]
+}

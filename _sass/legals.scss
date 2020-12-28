@@ -1,0 +1,49 @@
+@import "variables.scss";
+
+.legal {
+  header {
+    background-color: var(--color-primary);
+    box-sizing: border-box;
+    color: white;
+    font-size: 400%;
+    padding: calc(1.5 * var(--margin)) var(--grid-size) var(--margin)
+      var(--grid-size);
+  }
+
+  main {
+    h2 {
+      font-size: 150%;
+      font-weight: bold;
+      margin-bottom: var(--grid-size);
+    }
+
+    h3 {
+      font-size: 120%;
+      font-weight: bold;
+      margin-bottom: var(--grid-size);
+    }
+
+    p,
+    ul {
+      margin-bottom: var(--grid-size);
+    }
+
+    p + h2 {
+      margin-top: calc(2 * var(--grid-size));
+    }
+
+    small {
+      font-size: 90%;
+      font-style: italic;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: calc(2 * var(--grid-size));
+    }
+  }
+}

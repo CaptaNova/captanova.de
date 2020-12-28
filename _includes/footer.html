@@ -1,0 +1,16 @@
+<footer>
+  <div id="footer-content" class="max-width">
+    <div class="footer-group">
+      <ul>
+        {% for item in site.data.footer_links %}
+        <li><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="footer-group">
+      <ul>
+        <li>© 2020 <strong>CaptaNova</strong></li>
+      </ul>
+    </div>
+  </div>
+</footer>
