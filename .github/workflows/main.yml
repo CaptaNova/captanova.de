@@ -26,4 +26,4 @@ jobs:
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           local-dir: ${{ github.workspace }}/_site/
-          state-name: ${{ github.workspace }}/sync-state.json
+          state-name: ../.sync-state.json
