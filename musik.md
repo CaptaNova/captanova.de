@@ -26,8 +26,7 @@ permalink: /musik/
           <source src="https://github.com/CaptaNova/sheet-music/raw/master/{{ item.link }}/Audio.ogg" type="audio/ogg">
           <p>Dein Browser unterstützt HTML5 audio nicht. Hier ist ein <a href="https://github.com/CaptaNova/sheet-music/raw/master/{{ item.link }}/Audio.mp3">Link zum Hörbeispiel</a>.</p>
         </audio>
-        <!-- <a href="assets/sheet-music/{{ item.link }}/Score and Parts.pdf" class="button" download> -->
-        <a href="https://github.com/CaptaNova/sheet-music/raw/master/{{ item.link }}/Score%20and%20Parts.pdf" class="button" download>
+        <a href="https://github.com/CaptaNova/sheet-music/raw/master/{{ item.link }}/Full_de.pdf" class="button" download>
           <span class="button-icon"><svg class="feather"><use xlink:href="/assets/images/feather-sprite.svg#download"/></svg></span>
           <span class="button-text">Noten herunterladen</span>
         </a>
