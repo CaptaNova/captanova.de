@@ -5,13 +5,13 @@ title: Musik
 permalink: /musik/
 ---
 
-<div class="intro">
+<div class="max-width intro">
   <p>Sakrale Musik muss nicht langweilig sein.
     Unsere Orchestrierungen und Arrangements sind stark von orchestraler Filmmusik beeinflusst und machen geistliches Liedgut auch jüngerem Publikum zugänglich.</p>
   <p>Alle hier aufgeführten Noten stehen unter der <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International Lizenz (CC BY 4.0)</a> und dürfen somit frei verwendet und bearbeitet werden.</p>
 </div>
 
-<div class="panel-container">
+<div class="max-width panel-container">
   {% for item in site.data.sheet_music %}
     <div class="panel">
       <div class="panel-content">

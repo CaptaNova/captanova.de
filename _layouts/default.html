@@ -8,7 +8,7 @@
   </head>
   <body class="{{ page.content-type }}">
     <header><div class="max-width">{{ page.title }}</div></header>
-    <main><div class="max-width">{{ content }}</div></main>
+    <main role=”main”>{{ content }}</main>
     {% include footer.html %}
   </body>
 </html>

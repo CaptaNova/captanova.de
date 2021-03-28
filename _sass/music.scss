@@ -5,23 +5,24 @@
     background-color: var(--color-primary);
     box-sizing: border-box;
     color: white;
-    font-size: 400%;
-    padding: calc(1.5 * var(--margin)) var(--grid-size) var(--margin)
-      var(--grid-size);
+    font-size: 300%;
+    padding: var(--margin) calc(2 * var(--grid-size));
+    padding-top: calc(2 * var(--margin));
+
+    @media screen and (min-width: 600px) {
+      font-size: 400%;
+    }
   }
 
   .intro {
     font-size: 120%;
     line-height: 1.5;
     margin-bottom: var(--margin);
+    padding: 0 var(--grid-size);
 
     p {
       margin-bottom: var(--grid-size);
     }
-  }
-
-  .panel {
-    max-width: calc(1012px / 2);
   }
 
   .panel-container {
